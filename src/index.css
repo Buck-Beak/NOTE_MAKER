@@ -1,13 +1,151 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: my_font;
+  src: url(/fonts/PlaywriteDEGrund-VariableFont_wght.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  height:5000px;
+  overflow-y: auto;
+}
+
+.navbar{
+  font-family: my_font;
+  padding: 20px;
+  display: flex;
+  gap:200px;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  color: black;
+}
+
+.navbar a:hover {
+  color: #f1356d;
+}
+
+.navbar h1{
+  font-size: 30px;
+}
+
+.home{
+  font-family: my_font;
+  font-size: 25px;
+}
+
+.home img{
+  width:25px;
+  height:25px;
+}
+
+.note-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.note-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.note-preview h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+
+.note-preview a{
+  text-decoration: none;
+}
+
+.note-details{
+  font-family: my_font;
+}
+
+.buttons{
+  display:flex;
+  position:relative;
+  gap:20px;
+  margin-top: 50px;
+  justify-content: right;
+  margin-right:175px;
+}
+
+.note-details button{
+  font-family: my_font;
+  border-radius: 25px;
+}
+.note-details textarea{         
+  width:1000px;
+  min-height:200px;
+  position:relative;
+  margin-left:100px;
+  text-align:left; 
+  resize: none;
+  font-family: my_font;
+  font-size: 20px;
+  background-color: #ffe338;
+  border:none;
+  padding: 20px; 
+  box-sizing: border-box;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.note-details h1{
+  width:1000px;
+  background-color: #ffe338;
+  margin-left:278px;
+  margin-bottom: 0;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.note-details img{
+  width:40px;
+  height: 40px;
+  position: absolute;
+  z-index: 1;
+  left: 295px;
+  
+}
+
+.items{
+  font-family: my_font;
+  display:flex;
+  flex-direction: column;
+  width:1000px;
+  position: relative;
+  margin-left: 250px;
+  margin-top: 50px;
+  gap:20px;
+}
+
+.items input{
+  height:40px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 25px;
+}
+
+.items textarea{
+  height:200px;
+  border-radius: 25px;
+  padding: 20px; 
+  box-sizing: border-box;
+  font-size: 25px;
+}
+
+.items button{
+  width:100px;
+  height:25px;
+  border-radius: 25px;
+  position:relative;
+  margin-left: 450px;
 }
