@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Note Maker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Note Maker is a simple React application for creating, viewing, editing, and deleting notes. It uses JSON Server to simulate a backend API.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Installation](#installation)
+- [Usage](#usage)
+- [Components](#components)
+  - [Create](#create)
+  - [Home](#home)
+  - [NavBar](#navbar)
+  - [NoteDetails](#notedetails)
+  - [NotesList](#noteslist)
+  - [useFetch](#usefetch)
+- [Screenshots](#screenshots)
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+git clone <repository_url>
+cd note-maker
 
-### `npm test`
+2. Install the dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm install
 
-### `npm run build`
+3. Install JSON Server globally:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install -g json-server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Start JSON Server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+json-server --watch public/notes.json --port 8000
 
-### `npm run eject`
+5. Start the React application:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Navigate to the home page to view all notes.
+2. Click on "New Note" to create a new note.
+3. Click on a note title to view and edit the note.
+4. Use the "Save Note" button to save changes to a note.
+5. Use the "Delete Note" button to delete a note
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Components
 
-## Learn More
+### Create 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This component allows users to create a new note.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Home
 
-### Code Splitting
+This component fetches and displays a list of notes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Navbar  
 
-### Analyzing the Bundle Size
+This component displays the navigation bar.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### NoteDetails  
 
-### Making a Progressive Web App
+This component displays the details of a single note, allowing users to edit or delete it.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### NoteList 
 
-### Advanced Configuration
+This component displays a list of notes with links to their details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### UseFetch 
 
-### Deployment
+This custom hook fetches data from a given URL.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
