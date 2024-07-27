@@ -13,7 +13,6 @@ Note Maker is a simple React application for creating, viewing, editing, and del
   - [NoteDetails](#notedetails)
   - [NotesList](#noteslist)
   - [useFetch](#usefetch)
-- [Screenshots](#screenshots)
 
 ## Installation
 
