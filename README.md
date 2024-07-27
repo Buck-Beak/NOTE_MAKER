@@ -18,24 +18,34 @@ Note Maker is a simple React application for creating, viewing, editing, and del
 
 1. Clone the repository:
 
+```sh
 git clone <repository_url>
 cd note-maker
+```
 
 2. Install the dependencies:
 
+```sh
 npm install
+```
 
 3. Install JSON Server globally:
 
+```sh
 npm install -g json-server
+```
 
 4. Start JSON Server:
 
+```sh
 json-server --watch public/notes.json --port 8000
+```
 
 5. Start the React application:
 
+```sh
 npm start
+```
 
 ## Usage 
 
@@ -63,7 +73,7 @@ This component displays the navigation bar.
 
 This component displays the details of a single note, allowing users to edit or delete it.
 
-### NoteList 
+### NotesList 
 
 This component displays a list of notes with links to their details.
 
