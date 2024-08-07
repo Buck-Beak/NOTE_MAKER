@@ -82,7 +82,7 @@ This component displays a list of notes with links to their details.
 
 This custom hook fetches data from a given URL.
 
-# Video
+## Video
 
 [Note Maker.webm](https://github.com/user-attachments/assets/b4f05d95-a2f4-414e-bcd9-245c9f512207)
 
